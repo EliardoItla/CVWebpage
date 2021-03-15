@@ -1,7 +1,6 @@
 #title {
   background-color: #ff4c68;
   color: white;
-  height: 607px;
 }
 h1 {
   font: "Montserrat";
@@ -10,7 +9,7 @@ h1 {
   font-weight: 900;
 }
 .container-fluid {
-  padding: 3% 15% 0;
+  padding: 3% 15% 7%;
   height: 100%;
 }
 body {
@@ -36,13 +35,16 @@ body {
   margin: 5% 3% 5% 0;
 }
 .title-img {
-  max-width: 60%;
+  width: 22%;
   transform: rotate(25deg);
-  -webkit-clip-path: polygon(0 0, 0 90.6%, 100% 67.5%, 100% 0)
+  position: absolute;
+  right: 22%;
 }
 #features {
 text-align: center;
 padding: 7% 15%;
+position: relative;
+background-color: #fff;
 }
 .icon-feature {
   color: #ef8172;
@@ -65,7 +67,6 @@ h3 {
   padding: 4.5%;
 }
 #testimonials {
-  padding: 7% 15%;
   text-align: center;
   background-color: #ff4c68;
   color: #FFFFFF;
@@ -81,6 +82,9 @@ h2 {
   width: 10%;
   margin: 20px;
 }
+.carousel-item {
+    padding: 7% 15%;
+}
 #press {
   background: #ff4c68;
   text-align: center;
@@ -89,4 +93,26 @@ h2 {
 .press-logo {
   width: 15%;
   margin: 20px 20px 50px;
+}
+#pricing {
+  padding: 100px;
+  text-align: center;
+}
+.pricing-column {
+  padding: 3% 2%;
+}
+.princing-p-margin {
+  margin-bottom: 57px;
+}
+
+@media (max-width: 992px) {
+  .title-img {
+    position: static;
+    transform: rotate(0);
+    width: 60%;
+    margin-top: 20px;
+  }
+  #title {
+      text-align: center;
+  }
 }
